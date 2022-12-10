@@ -1,0 +1,16 @@
+.showcase {
+  width: 100%;
+  height: 15px;
+  /* Rellenamos la imagen y ajustamos */
+  background: url('./logo.jpg') no-repeat center center/cover;
+  /* Espaciado interno */
+  padding: 50px;
+  /*Espaciado externo  */
+  margin-bottom: 0px;
+  /* Para centrar el texto de adentro */
+  display: flex;
+  /* Para que el texto este debajo y centreado */
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
