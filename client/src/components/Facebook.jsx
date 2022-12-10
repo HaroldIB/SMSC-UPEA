@@ -6,7 +6,7 @@ function Facebook() {
       class="fb-page"
       data-href="https://www.facebook.com/ElAltoSeguridadCiudadana"
       data-tabs="timeline"
-      data-width="200"
+      data-width="150"
       data-height=""
       data-small-header="true"
       data-adapt-container-width="true"

@@ -30,7 +30,7 @@ function TaskForm() {
   return (
     <div className="mx-auto">
       <h1 className="text-xl text-white font-bold uppercase text-center">
-        BIENVENIDO
+        RECLAMOS Y CONSULTAS
       </h1>
       <Formik
         initialValues={task}
@@ -58,9 +58,9 @@ function TaskForm() {
             <h1 className="text-xl font-bold uppercase text-center">
               {params.id
                 ? "EDITANDO UNA PUBLICACIÓN"
-                : "CREANDO UNA PUBLICACIÓN"}
+                : "PUBLIQUE AQUÍ SU RECLAMO O CONSULTA PARA SER ATENDIDO"}
             </h1>
-            <label className="block"> TÍTULO </label>
+            <label className="block"> TÍTULO CORTO</label>
             <input
               type="text"
               name="title"
@@ -69,7 +69,7 @@ function TaskForm() {
               onChange={handleChange}
               value={values.title}
             />
-            <label className="block"> DESCRIPCIÓN </label>
+            <label className="block"> DESCRIPCIÓN DE LA CONSULTA</label>
             <textarea
               name="description"
               rows="3"
@@ -83,7 +83,7 @@ function TaskForm() {
               disabled={isSubmitting}
               className="block bg-indigo-500 px-2 py-1 text-white w-full rounded-md"
             >
-              {isSubmitting ? "Guardando" : "Guardar"}
+              {isSubmitting ? "Enviando" : "Enviar"}
             </button>
           </Form>
         )}

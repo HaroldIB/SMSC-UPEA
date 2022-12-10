@@ -36,12 +36,7 @@ function Navbar() {
           </Link>
         </li>
         <li className="nav__item">
-          <Link
-            to="/login"
-            className="nav__link bg-slate-600 text-white px-2 py-1 rounded-sm"
-          >
-            INGRESAR
-          </Link>
+
         </li>
       </ul>
       <div onClick={navToggle} className={toggleIcon}>

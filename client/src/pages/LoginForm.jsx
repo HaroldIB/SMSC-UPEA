@@ -33,7 +33,7 @@ function LoginForm() {
         enableReinitialize={true}
         onSubmit={async (values, actions) => {
           console.log(values);
-          navigate("/form");
+          navigate("/userpage");
           setUser({
             user: "",
             pass: "",

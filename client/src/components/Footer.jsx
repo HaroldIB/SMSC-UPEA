@@ -26,7 +26,7 @@ export default function App() {
             href="#!"
             role="button"
           >
-            <a href="https://www.facebook.com/ElAltoSeguridadCiudadana">
+            <a href="https://twitter.com/?lang=es">
               <TwitterIcon size={25} round />
             </a>
           </MDBBtn>
@@ -38,7 +38,7 @@ export default function App() {
             href="#!"
             role="button"
           >
-            <a href="https://www.facebook.com/ElAltoSeguridadCiudadana">
+            <a href="https://wa.me/59174011226">
               <WhatsappIcon size={25} round />
             </a>
           </MDBBtn>

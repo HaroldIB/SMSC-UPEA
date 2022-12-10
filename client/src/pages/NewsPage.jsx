@@ -7,6 +7,7 @@ function NewsPage() {
   useEffect(() => {
     loadNews();
   }, []);
+  
   function renderMain() {
     if (news.lenght === 0) return <h1>No hay publicaciones aún</h1>;
     return news.map((niw) => <NewCard niw={niw} key={niw.id} />);

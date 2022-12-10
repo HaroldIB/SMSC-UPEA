@@ -17,9 +17,19 @@ function TaskCard({ task }) {
       <p className="text-xs">{task.description}</p>
       <span>{task.createAt}</span>
       <div className="block gap-x-1">
-        <button className="bg-red-500 px-2 py-1 text-white" onClick={() => deleteTask(task.id)}>ELIMINAR</button>
-        <button className="bg-slate-800 px-2 py-1 text-white" onClick={() => navigate(`/edit/${task.id}`)}>EDITAR</button>
-        <button className="bg-green-500 px-2 py-1 text-white" onClick={() => handleDone(task.done)}>DONE</button>
+        <button
+          className="bg-red-500 px-2 py-1 text-white"
+          onClick={() => deleteTask(task.id)}
+        >
+          ELIMINAR
+        </button>
+        {/* <button className="bg-slate-800 px-2 py-1 text-white" onClick={() => navigate(`/edit/${task.id}`)}>EDITAR</button> */}
+        <button
+          className="bg-green-500 px-2 py-1 text-white"
+          onClick={() => handleDone(task.done)}
+        >
+          ATENDER
+        </button>
       </div>
     </div>
   );

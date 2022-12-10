@@ -22,10 +22,10 @@ function Supnavbar() {
             <a href="https://www.facebook.com/ElAltoSeguridadCiudadana">
               <FacebookIcon size={25} round />
             </a>
-            <a href="https://www.facebook.com/ElAltoSeguridadCiudadana">
+            <a href="https://twitter.com/?lang=es">
               <TwitterIcon size={25} round />
             </a>
-            <a href="https://www.facebook.com/ElAltoSeguridadCiudadana">
+            <a href="https://wa.me/59174011226">
               <WhatsappIcon size={25} round />
             </a>
           </li>

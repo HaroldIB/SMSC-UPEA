@@ -3,11 +3,12 @@ import "../logo.css";
 
 function Logo() {
   return (
-    <header className="showcase">
-      <Link to="/">
-        <h2>-*-*Secreatría Municipal de Seguridad Ciudadana*-*-</h2>
-      </Link>
-    </header>
+    <div className="bg-slate-600">
+      <h2 className="text-white flex justify-center">SECRETARIA MUNICIPAL DE SEGURIDAD CIUDADANA DEL GOBIERNO AUTÓNOMO MUNICIPAL DE EL ALTO</h2>
+      <header className="showcase">
+        <Link to="/"></Link>
+      </header>
+    </div>
   );
 }
 

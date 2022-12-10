@@ -15,7 +15,7 @@ function TasksPage() {
 
   return (
     <div>
-      <h1 className="text-5xl text-white font-bold text-center">PUBLICACIONES</h1>
+      <h1 className="text-5xl text-white font-bold text-center">Reclamos y Consultas de la Población</h1>
       <div className="grid grid-cols-2 gap-2">{renderMain()}</div>
     </div>
   );
