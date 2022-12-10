@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import NewCard from "../components/NewCard";
 import { useNews } from "../context/NewProvider";
+import "../News.css"
+
 
 function NewsPage() {
   const { news, loadNews } = useNews();
@@ -13,11 +15,11 @@ function NewsPage() {
     return news.map((niw) => <NewCard niw={niw} key={niw.id} />);
   }
   return (
-    <div>
+    <div className="w-auto px-2 py-2">
       <h1 className="text-white font-bold text-center uppercase">
         Secretaría Municipal de Seguridad Ciudadana
       </h1>
-      <div className="grid grid-cols-2  gap-2">{renderMain()}</div>
+      <div className="news-card ">{renderMain()}</div>
     </div>
   );
 }

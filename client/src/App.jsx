@@ -14,15 +14,15 @@ import { NewContextProvider } from "./context/NewProvider";
 import { UserContextProvider } from "./context/UserProvider";
 import NewForm from "./pages/NewForm";
 import UserPage from "./pages/UserPage";
-
+import "./App.css"
 function App() {
   return (
     <div className="bg-slate-900 h-max">
       <Supnavbar />
       <Logo />
       <Navbar />
-      <div className="flex">
-        <div className="container max-width py-4 px-20">
+      <div className="card-main">
+        <div className="container py-4 px-2">
           <UserContextProvider>
             <NewContextProvider>
               <TaskContextProvider>
@@ -41,7 +41,9 @@ function App() {
             </NewContextProvider>
           </UserContextProvider>
         </div>
-        <Facebook />
+        <div className="px-1 py-5">
+          <Facebook />
+        </div>
       </div>
       <Footer />
     </div>
