@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBFooter, MDBContainer, MDBIcon, MDBBtn } from "mdb-react-ui-kit";
+import { MDBFooter, MDBContainer, MDBBtn } from "mdb-react-ui-kit";
 import { FacebookIcon, TwitterIcon, WhatsappIcon } from "react-share";
 
 export default function App() {
@@ -11,36 +11,34 @@ export default function App() {
             floating
             className="m-1"
             style={{ backgroundColor: "#3b5998" }}
-            href="#!"
+            href="https://www.facebook.com/ElAltoSeguridadCiudadana"
             role="button"
           >
-            <a href="https://www.facebook.com/ElAltoSeguridadCiudadana">
-              <FacebookIcon size={25} round />
-            </a>
+            <FacebookIcon size={25} round />
           </MDBBtn>
 
           <MDBBtn
             floating
             className="m-1"
             style={{ backgroundColor: "#55acee" }}
-            href="#!"
+            href="https://twitter.com/?lang=es"
             role="button"
           >
-            <a href="https://twitter.com/?lang=es">
-              <TwitterIcon size={25} round />
-            </a>
+
+            <TwitterIcon size={25} round />
+
           </MDBBtn>
 
           <MDBBtn
             floating
             className="m-1"
             style={{ backgroundColor: "#075E54" }}
-            href="#!"
+            href="https://wa.me/59174011226"
             role="button"
           >
-            <a href="https://wa.me/59174011226">
-              <WhatsappIcon size={25} round />
-            </a>
+        
+            <WhatsappIcon size={25} round />
+
           </MDBBtn>
         </section>
       </MDBContainer>
@@ -51,7 +49,7 @@ export default function App() {
       >
         © 2022 Copyright: Harold Bustamante
         <a className="text-white" href="https://www.google.com/">
-          www.Google.com
+        www.Google.com
         </a>
       </div>
     </MDBFooter>

@@ -4,24 +4,31 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function LoginForm() {
-  const { getUser } = useUsers();
+  const { getUser, authenticateUser } = useUsers();
 
   const [user, setUser] = useState({
     user: "",
     pass: "",
   });
+
+  const inputChange = ({ target }) => {
+    const { name, value } = target;
+    setUser({
+      ...user,
+      [name]: value,
+    });
+  };
+
   const params = useParams();
   const navigate = useNavigate();
 
   useEffect(() => {
     const loadUser = async () => {
-      if (params.id) {
-        const user = await getUser(params.id);
-        setUser({
-          user: user.user,
-          pass: user.pass,
-        });
-      }
+      const user = await authenticateUser(params.id);
+      setUser({
+        user: user.user,
+        pass: user.pass,
+      });
     };
     loadUser();
   }, []);
@@ -54,7 +61,7 @@ function LoginForm() {
               name="user"
               placeholder="Ingrese su Usuario"
               className="px-2 py-1 rounded-sm w-full"
-              onChange={handleChange}
+              onChange={inputChange}
               value={values.user}
             />
             <label className="block">CONTRASEÑA</label>
@@ -63,7 +70,7 @@ function LoginForm() {
               name="pass"
               placeholder="Ingrese su Contraseña"
               className="px-2 py-1 rounded-sm w-full"
-              onChange={handleChange}
+              onChange={inputChange}
               value={values.pass}
             />
             <button

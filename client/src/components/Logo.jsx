@@ -7,7 +7,7 @@ function Logo() {
       <div className="Iam flex justify-centerst">
         <p>GAMEA</p>
         <b>
-          <div class="innerIam">
+          <div className="innerIam">
             Secretaría
             <br />
             Municipal

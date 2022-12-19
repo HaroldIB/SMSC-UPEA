@@ -6,7 +6,7 @@ import NewCardUser from "../components/NewCardUser";
 import { useEffect, useState } from "react";
 
 function NewForm() {
-  const { news, loadNews, createNews, getNew, updateNew } = useNews();
+  const { news, createNews, getNew, updateNew } = useNews();
 
   const params = useParams();
   const navigate = useNavigate();

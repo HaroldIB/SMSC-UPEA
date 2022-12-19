@@ -3,7 +3,7 @@ import { pool } from "../db.js";
 export const getNews = async (req, res) => {
   try {
     const [result] = await pool.query(
-      "SELECT * FROM news ORDER BY createAt ASC"
+      "SELECT * FROM news ORDER BY createAt DESC"
     );
     res.json(result);
   } catch (error) {

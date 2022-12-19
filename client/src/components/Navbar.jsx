@@ -13,9 +13,9 @@ function Navbar() {
       : setToggleIcon("nav__toggler");
   };
   return (
-    <nav className="nav bg-slate-800 flex justify-between px-20 py-1">
+    <nav className="nav bg-slate-800 flex justify-between px-2 py-0">
       <Link to="/" className="nav__brand text-white font-bold">
-        <img src="/gamea.png" className="object-contain  h-15 w-20" alt="" />
+        <img src="/gamea.png" className="object-contain  h-15 w-60" alt="" />
       </Link>
       <ul className={active}>
         <li className="nav__item">

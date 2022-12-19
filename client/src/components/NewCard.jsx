@@ -19,9 +19,6 @@ function NewCard({ niw }) {
         <a href="https://twitter.com/?lang=es">
           <TwitterIcon size={50} round />
         </a>
-        {/* <a href="https://wa.me/59174011226">
-          <WhatsappIcon size={50} round />
-        </a> */}
       </div>
     </div>
   );
