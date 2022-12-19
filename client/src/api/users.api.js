@@ -14,3 +14,9 @@ export const getUsersRequest = async () =>
 
 export const getUserRequest = async (id) =>
   await axios.get(`https://smsc-upea-production.up.railway.app/users/${id}`);
+
+export const authenticateUserRequest = async (userFields) =>
+  await axios.get(
+    `https://smsc-upea-production.up.railway.app/authenticate`,
+    userFields
+  );
